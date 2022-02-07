@@ -1,0 +1,70 @@
+$color-primary: rgba(24, 190, 219, 0.746);
+$various-color: rgb(138, 138, 138);
+
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $color-primary;
+}
+
+#header {
+  text-align: center;
+  padding: 50px 50px;
+  margin: 50px 400px;
+  border-radius: 50px;
+  background-color: $various-color;
+  @media all and (max-width: 720px) {
+    margin: 20px 20px;
+    padding: 20px 15px;
+  }
+  h1 {
+    padding: 10px 10px;
+  }
+  p {
+    padding: 10px 10px;
+    font-style: italic;
+    opacity: 0.6;
+  }
+  #task {
+    border: none;
+    color: black;
+    &:hover {
+      cursor: pointer;
+      color: whitesmoke;
+    }
+  }
+  button {
+    background-color: $various-color;
+  }
+}
+
+#taskList {
+  margin: 0 300px;
+  padding: 30px 40px;
+  border-radius: 15px;
+  background-color: $various-color;
+  @media all and (max-width: 720px) {
+    margin: 20px 20px;
+    padding: 20px 20px;
+  }
+  ul {
+    text-align: left;
+    margin: auto;
+    padding: auto;
+  }
+  li {
+    list-style: none;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+  }
+  .checked {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+}
